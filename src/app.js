@@ -14,10 +14,10 @@ let when = [
 ];
 
 window.onload = function() {
-  let random1 = Math.floor(Math.random() * 4);
-  let random2 = Math.floor(Math.random() * 4);
-  let random3 = Math.floor(Math.random() * 3);
-  let random4 = Math.floor(Math.random() * 5);
+  let random1 = Math.floor(Math.random() * who.length);
+  let random2 = Math.floor(Math.random() * action.length);
+  let random3 = Math.floor(Math.random() * what.length);
+  let random4 = Math.floor(Math.random() * when.length);
   replace(random1, random2, random3, random4);
   image(random1);
 };
